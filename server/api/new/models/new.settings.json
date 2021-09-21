@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "news",
+  "info": {
+    "name": "New",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "picture": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "body": {
+      "type": "richtext"
+    },
+    "description": {
+      "type": "richtext",
+      "required": true
+    },
+    "downloads": {
+      "collection": "download",
+      "via": "new"
+    },
+    "timeRead": {
+      "type": "integer",
+      "max": 300,
+      "required": true,
+      "min": 1
+    }
+  }
+}
