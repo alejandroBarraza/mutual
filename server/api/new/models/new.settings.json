@@ -2,7 +2,7 @@
   "kind": "collectionType",
   "collectionName": "news",
   "info": {
-    "name": "New",
+    "name": "Noticia",
     "description": ""
   },
   "options": {
@@ -12,12 +12,12 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "title": {
+    "titulo": {
       "type": "string",
       "unique": true,
       "required": true
     },
-    "picture": {
+    "imagen": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
@@ -27,18 +27,18 @@
       "required": true,
       "pluginOptions": {}
     },
-    "body": {
+    "cuerpo": {
       "type": "richtext"
     },
-    "description": {
+    "descripcion": {
       "type": "richtext",
       "required": true
     },
     "downloads": {
-      "collection": "download",
-      "via": "new"
+      "via": "new",
+      "collection": "download"
     },
-    "timeRead": {
+    "tiempoLectura": {
       "type": "integer",
       "max": 300,
       "required": true,

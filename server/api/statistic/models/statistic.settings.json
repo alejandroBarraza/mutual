@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "statistics",
   "info": {
-    "name": "Statistic"
+    "name": "Estadisticas",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -11,11 +12,11 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "title": {
+    "titulo": {
       "type": "text",
       "required": true
     },
-    "description": {
+    "descripcion": {
       "type": "text",
       "required": false
     }
