@@ -35,8 +35,9 @@
       "required": true
     },
     "downloads": {
-      "via": "new",
-      "collection": "download"
+      "via": "news",
+      "collection": "download",
+      "dominant": true
     },
     "tiempoLectura": {
       "type": "integer",

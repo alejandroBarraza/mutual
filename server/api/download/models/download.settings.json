@@ -31,9 +31,9 @@
       "required": false,
       "pluginOptions": {}
     },
-    "new": {
+    "news": {
       "via": "downloads",
-      "model": "new"
+      "collection": "new"
     }
   }
 }
