@@ -1,6 +1,6 @@
 import './App.css';
 import { Navbar } from './components/home/navbar/Navbar';
-import { ApolloClient, InMemoryCache, ApolloProvider } from 'apollo-client';
+import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
 
 const client = new ApolloClient({
     uri: 'http://localhost:1337/graphql',
