@@ -1,21 +1,10 @@
-import React, { useState } from 'react';
-import { NavbarItem } from './NavbarItem';
-import AccountCircleRoundedIcon from '@material-ui/icons/AccountCircleRounded';
-import { green } from '@material-ui/core/colors';
-import '../../../container.css';
-import './Navbar.css';
+import React from 'react';
+import { useViewport } from '../../hooks/useViewport';
+import { NavbarbarDesktop } from './NavbarDesktop';
+import { NavbarMobile } from './NavbarMobile';
+
 export const Navbar = () => {
-    const [clicked, setclicked] = useState(false);
-    const handleClicked = () => setclicked(!clicked);
-    return (
-        <div className='wrapper'>
-            <nav className='navbar container '>
-                <div className='logo'>
-                    <img src='./logo-verde.jpg' alt='logo-mutual' />
-                </div>
-                <NavbarItem />
-                <AccountCircleRoundedIcon style={{ color: green[300] }} />
-            </nav>
-        </div>
-    );
+    const { width } = useViewport();
+    const breakpoint = 768;
+    return width > breakpoint ? <NavbarbarDesktop /> : <NavbarMobile />;
 };

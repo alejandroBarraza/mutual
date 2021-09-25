@@ -1,13 +1,27 @@
-import React from 'react';
-import './NavbarItem.css';
-export const NavbarItem = () => {
-    return (
-        <ul className='navbar-items'>
-            <li>Noticias</li>
-            <li>Testimonios</li>
-            <li>Casos</li>
-            <li>Descargables</li>
-            <li>Empresas</li>
-        </ul>
-    );
-};
+export const NavbarItem = [
+    {
+        title: 'Noticias',
+        url: '#',
+        cName: 'navbar-items',
+    },
+    {
+        title: 'Testimonios',
+        url: '#',
+        cName: 'navbar-items',
+    },
+    {
+        title: 'Casos',
+        url: '#',
+        cName: 'navbar-items',
+    },
+    {
+        title: 'Descargables',
+        url: '#',
+        cName: 'navbar-items',
+    },
+    {
+        title: 'Contactanos',
+        url: '#',
+        cName: 'navbar-items',
+    },
+];
