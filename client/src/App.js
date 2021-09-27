@@ -1,6 +1,7 @@
-import './App.css';
+import React from 'react';
 import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
-import { Navbar } from './components/home/navbar/Navbar';
+import './App.css';
+import { AppRouter } from './components/routers/AppRouter';
 
 const client = new ApolloClient({
     uri: 'http://localhost:1337/graphql',
@@ -11,7 +12,7 @@ function App() {
     return (
         <div>
             <ApolloProvider client={client}>
-                <Navbar />
+                <AppRouter />
             </ApolloProvider>
         </div>
     );
