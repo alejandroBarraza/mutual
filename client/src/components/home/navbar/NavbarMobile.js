@@ -7,7 +7,7 @@ import { NavbarItem } from './NavbarItem';
 export const NavbarMobile = () => {
     const [navClicked, setnavClicked] = useState(!false);
     const handleClick = () => setnavClicked(!navClicked);
-    console.log(navClicked);
+
     return (
         <div className='wrapper-mobile'>
             <nav className=' navbar-mobile container'>

@@ -1,9 +1,10 @@
 import React from 'react';
-import { green } from '@material-ui/core/colors';
-import '../../../container.css';
-import './NavbarDesktop.css';
-import { NavbarItem } from './NavbarItem';
+import { Link } from 'react-router-dom';
 import AccountCircleRoundedIcon from '@material-ui/icons/AccountCircleRounded';
+import { green } from '@material-ui/core/colors';
+import { NavbarItem } from './NavbarItem';
+import './NavbarDesktop.css';
+import '../../../container.css';
 
 export const NavbarbarDesktop = () => {
     return (
@@ -15,9 +16,9 @@ export const NavbarbarDesktop = () => {
                 <ul className='navbar-items'>
                     {NavbarItem.map((item, index) => (
                         <li key={index}>
-                            <a className={item.cName} href={item.url}>
+                            <Link className={item.cName} to={item.url}>
                                 {item.title}
-                            </a>
+                            </Link>
                         </li>
                     ))}
                 </ul>

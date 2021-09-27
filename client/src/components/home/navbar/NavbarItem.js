@@ -1,12 +1,12 @@
 export const NavbarItem = [
     {
         title: 'Noticias',
-        url: '#',
+        url: '/noticias',
         cName: 'navbar-items',
     },
     {
         title: 'Testimonios',
-        url: '#',
+        url: '/admin',
         cName: 'navbar-items',
     },
     {
